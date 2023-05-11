@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int subject1, subject2, subject3, subject4, subject5, subject6, subject7;
+    float total_marks, percentage;
+
+    printf("Enter total marks for subject 1: ");
+    scanf("%d", &subject1);
+    printf("Enter total marks for subject 2: ");
+    scanf("%d", &subject2);
+    printf("Enter total marks for subject 3: ");
+    scanf("%d", &subject3);
+    printf("Enter total marks for subject 4: ");
+    scanf("%d", &subject4);
+    printf("Enter total marks for subject 5: ");
+    scanf("%d", &subject5);
+    printf("Enter total marks for subject 6: ");
+    scanf("%d", &subject6);
+    printf("Enter total marks for subject 7: ");
+    scanf("%d", &subject7);
+
+    total_marks = subject1 + subject2 + subject3 + subject4 + subject5 + subject6 + subject7;
+    percentage = total_marks / 7.0;
+
+    printf("Percentage: %.2f%%\n", percentage);
+
+    if (percentage >= 80.0) {
+        printf("Division: Distinction\n");
+    } else if (percentage >= 60.0) {
+        printf("Division: First\n");
+    } else if (percentage >= 50.0) {
+        printf("Division: Second\n");
+    } else if (percentage >= 40.0) {
+        printf("Division: Third\n");
+    } else {
+        printf("Division: Fail\n");
+    }
+
+    return 0;
+}
